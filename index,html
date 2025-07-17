@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperación de Archivos</title>
+  <style>
+    body { font-family: Arial; text-align: center; background: #f0f0f0; padding: 50px; }
+    .box { background: white; padding: 30px; border-radius: 15px; max-width: 500px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+    .cta { background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; display: inline-block; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>¿Perdiste tus archivos?</h1>
+    <p>Recuperamos tus fotos, documentos y más desde USBs o discos dañados.</p>
+    <a class="cta" href="https://wa.me/593XXXXXXXXX" target="_blank">Contáctanos por WhatsApp</a>
+  </div>
+</body>
+</html>
