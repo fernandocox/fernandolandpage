@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Recuperación de Archivos - Fernando</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -15,23 +15,47 @@
     body, html {
       height: 100%;
       font-family: 'Orbitron', sans-serif;
-      overflow: hidden;
-      background: #0f2027;
       background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
       color: white;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 20px;
     }
 
     .container {
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px;
+      max-width: 700px;
+      background-color: rgba(0,0,0,0.7);
       border-radius: 20px;
+      padding: 30px 30px 40px 30px;
       box-shadow: 0 0 20px rgba(0,255,255,0.3);
-      max-width: 600px;
+      animation: fadeIn 2s ease-in-out;
+      text-align: center;
+    }
+
+    /* Collage container */
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .collage img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,255,255,0.4);
+    }
+
+    .collage img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,255,255,0.8);
     }
 
     h1 {
@@ -44,6 +68,7 @@
     p {
       font-size: 1.2rem;
       margin-bottom: 15px;
+      line-height: 1.5;
     }
 
     .trust {
@@ -86,10 +111,19 @@
 </head>
 <body>
   <div class="container">
+    <div class="collage" aria-label="Collage de imágenes relacionadas con recuperación de datos">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Disco duro en reparación" />
+      <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=400&q=80" alt="Manos trabajando en computadora" />
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Tecnología y datos digitales" />
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Memoria USB en foco" />
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Código en pantalla" />
+      <img src="https://images.unsplash.com/photo-1503424886301-4f6d8f137b5b?auto=format&fit=crop&w=400&q=80" alt="Discos duros apilados" />
+    </div>
+
     <h1>¿Perdiste tus datos? No te preocupes, ¡estamos aquí para ayudarte!</h1>
     <p>Somos expertos en recuperación de archivos y recuperamos tus fotos, videos y documentos importantes de USBs, discos duros y memorias dañadas. Confía en nuestro servicio rápido y seguro para recuperar lo que creías perdido.</p>
     <p class="trust">✔ Servicio 100% confiable y seguro</p>
-    <a class="cta" href="https://wa.me/593988167524" target="_blank">Chatea con nosotros</a>
+    <a class="cta" href="https://wa.me/593988167524" target="_blank" rel="noopener noreferrer">Chatea con nosotros</a>
   </div>
 </body>
 </html>
